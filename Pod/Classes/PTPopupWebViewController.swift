@@ -148,7 +148,7 @@ open class PTPopupWebViewController : UIViewController {
             CATransaction.setCompletionBlock({
                 self.popupView.layer.mask = nil
             })
-            CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut))
+            CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut))
 
             let maskLayer = CALayer()
             maskLayer.backgroundColor = UIColor.white.cgColor
@@ -312,7 +312,7 @@ extension PTPopupWebViewController : PTPopupWebViewDelegate {
             CATransaction.setCompletionBlock({
                 completion(true)
             })
-            CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut))
+            CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut))
 
             let maskLayer = CALayer()
             maskLayer.backgroundColor = UIColor.white.cgColor
